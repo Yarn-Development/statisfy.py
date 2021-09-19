@@ -6,7 +6,7 @@ ttv = Twitch(
 )
 async def test():
   info = await ttv.getUserByName("aspekts")
-  return info
+  print(info)
 
 loop = asyncio.get_event_loop()
 # Blocking call which returns when the display_date() coroutine is done

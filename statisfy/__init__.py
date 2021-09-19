@@ -1,1 +1,1 @@
-from twitch import Twitch
+from .twitch import Twitch
