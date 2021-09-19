@@ -3,7 +3,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 setup(
   name="statisfy",
-  version="0.0.1",
+  version="0.0.2",
   author="Aspekts",
   author_email="aspektshelp@gmail.com",
   description="Get statistics from your favourite social media sites, games and more!",
@@ -11,6 +11,7 @@ setup(
   long_description=long_description,
   packages=find_packages(),
   url="https://github.com/aspekts/statisfy.py",
+  download_url="https://github.com/aspekts/statisfy/archive/v_002.tar.gz",
   project_urls={
         "Bug Tracker": "https://github.com/aspekts/statisfy.py/issues",
   },
