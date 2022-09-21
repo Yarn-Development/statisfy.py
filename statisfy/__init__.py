@@ -1,3 +1,4 @@
-from .classes.twitch import Twitch
-from .classes.trn import TRN
-from .classes.youtube import YouTube
+from .twitch import Twitch
+from .trn import TRN
+from .youtube import YouTube
+from .objectify import objectify

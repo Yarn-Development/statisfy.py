@@ -1,31 +1,35 @@
-from statisfy import Twitch,TRN, YouTube
+from statisfy import Twitch, TRN, YouTube, objectify
 import asyncio
 import os
+import json
+from dotenv import load_dotenv
+
+load_dotenv()
+
 ttv = Twitch(
-  client_id=os.environ["ttvID"],
-  secret=os.environ["ttvS"]
+  client_id=os.getenv("ttvID"),
+  secret=os.getenv("ttvS")
 )
 trn = TRN(
-  key = os.environ["trn"]
+  key = os.getenv("trn")
 )
 yt = YouTube(
-  key=os.environ["YT"]
+  key=os.getenv("YT")
 )
-async def test():
-  info = await ttv.getUserByName("aspekts")
-  print(info)
+def test():
+  info = ttv.getUserByName("aspekts")
+
   ## returns dictionary of twitch user's information
   apex = trn.ApexLegends(
     username="xAspekts",
     platform="xbl"
   )
-  print(apex)
   ## returns dictionary of apex information
+  query = yt.getVideoByQuery("Niko Omilana")
+  ## returns dictionary of video information
+  print(query)
 
-loop = asyncio.get_event_loop()
-# Blocking call which returns when the display_date() coroutine is done
-loop.run_until_complete(test())
-loop.close()
+test()
 
 
 """" 
