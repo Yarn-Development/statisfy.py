@@ -40,6 +40,8 @@ class TRN:
     :param platform: xbl, psn, origin
 
     :return: A  Stringified JSON object
+    :rtype: str
+    
     """
     platforms = ["xbl","psn","origin"]
     if platform not in platforms:
