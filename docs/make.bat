@@ -24,7 +24,7 @@ if errorlevel 9009 (
 )
 
 if "%1" == "" goto help
-
+python3 -m pip install sphinx
 %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
 goto end
 
