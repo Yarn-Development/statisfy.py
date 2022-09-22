@@ -8,7 +8,10 @@ Welcome to Statisfy's documentation!
 Statisfy (stˈæɾɪsfˌa͡ɪ) is a Python library for statistical analysis of all sorts of social media and gaming platforms, through the use of handling each's respective APIs.
 
 .. note::
+
    This is a work in progress, and so many more platforms may be added in the future.
+
+   Statisfy is also available in Node.js! Find out more at https://statisfy.js.org!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
